@@ -15,6 +15,6 @@ app.use(express.static(publicDir));
 app.use(fileRoute);
 app.use(prensentationRoute);
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log('server started on port 3030');
 });
